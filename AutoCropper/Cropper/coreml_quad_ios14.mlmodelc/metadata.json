@@ -1,0 +1,72 @@
+[
+  {
+    "shortDescription" : "Estimates the segmented output",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "height" : "256",
+        "colorspace" : "Grayscale",
+        "isOptional" : "0",
+        "width" : "256",
+        "isColor" : "0",
+        "formattedType" : "Image (Grayscale 256 × 256)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "image_output"
+      }
+    ],
+    "version" : "1",
+    "modelParameters" : [
+
+    ],
+    "author" : "Chaitanya GOPIREDDY",
+    "specificationVersion" : 5,
+    "storagePrecision" : "Mixed (Float32, Int8)",
+    "license" : "Microsoft",
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "11.0",
+      "tvOS" : "14.0",
+      "watchOS" : "7.0",
+      "iOS" : "14.0",
+      "macCatalyst" : "14.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "height" : "256",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "256",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 256 × 256)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "Color Image",
+        "name" : "image"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "4.1",
+      "com.github.apple.coremltools.source" : "tensorflow==2.3.0"
+    },
+    "generatedClassName" : "UNET_DOCS_08_EXP_09_iOS14",
+    "neuralNetworkLayerTypeHistogram" : {
+      "Concat" : 4,
+      "ActivationLinear" : 1,
+      "ActivationReLU" : 23,
+      "UpsampleBiLinear" : 4,
+      "Add" : 1,
+      "Transpose" : 1,
+      "LoadConstantND" : 1,
+      "Convolution" : 31,
+      "ActivationSigmoid" : 1,
+      "PoolingMax" : 4
+    },
+    "method" : "predict"
+  }
+]

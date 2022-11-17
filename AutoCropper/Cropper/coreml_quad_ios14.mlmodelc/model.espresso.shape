@@ -1,0 +1,347 @@
+{
+  "layer_shapes" : {
+    "Unet_TF\/activation_6\/Relu" : {
+      "k" : 64,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "Unet_TF\/up_sampling2d_1\/resize\/ResizeBilinear_channel_first_upsample_bilinear" : {
+      "k" : 256,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "Unet_TF\/activation_4\/Relu" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 128
+    },
+    "Unet_TF\/up_sampling2d_2\/resize\/ResizeBilinear_channel_first_upsample_bilinear" : {
+      "k" : 128,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "Unet_TF\/concatenate_3\/concat" : {
+      "k" : 64,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 128
+    },
+    "Unet_TF\/activation_2\/Relu" : {
+      "k" : 16,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 256
+    },
+    "Unet_TF\/separable_conv2d_1\/separable_conv2d\/depthwisex" : {
+      "k" : 64,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "Unet_TF\/activation_22\/Relu" : {
+      "k" : 16,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 256
+    },
+    "Unet_TF\/conv2d_17\/Conv2Dx" : {
+      "k" : 1,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 256
+    },
+    "Unet_TF\/activation_18\/Relu" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 128
+    },
+    "Identity" : {
+      "k" : 1,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 256
+    },
+    "Unet_TF\/up_sampling2d_3\/resize\/ResizeBilinear_channel_first_upsample_bilinear" : {
+      "k" : 64,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 128
+    },
+    "Unet_TF\/activation_21\/Relu" : {
+      "k" : 16,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 256
+    },
+    "Unet_TF\/activation_13\/Relu" : {
+      "k" : 128,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "max_pool_83" : {
+      "k" : 128,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "Unet_TF\/activation_17\/Relu" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 128
+    },
+    "Unet_TF\/separable_conv2d_4\/separable_conv2d\/depthwisex" : {
+      "k" : 256,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "Unet_TF\/concatenate_2\/concat" : {
+      "k" : 128,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "Unet_TF\/up_sampling2d_4\/resize\/ResizeBilinear_channel_first_upsample_bilinear" : {
+      "k" : 32,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 256
+    },
+    "Unet_TF\/separable_conv2d_6\/separable_conv2d\/depthwisex" : {
+      "k" : 256,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "Unet_TF\/activation_9\/Relu" : {
+      "k" : 256,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "image" : {
+      "k" : 3,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 256
+    },
+    "max_pool_82" : {
+      "k" : 64,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "Unet_TF\/activation_7\/Relu" : {
+      "k" : 128,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "Unet_TF\/activation_12\/Relu" : {
+      "k" : 128,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "Unet_TF\/separable_conv2d_2\/separable_conv2d\/depthwisex" : {
+      "k" : 128,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "Unet_TF\/activation_5\/Relu" : {
+      "k" : 64,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "Unet_TF\/conv2d_17\/Conv2D" : {
+      "k" : 1,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 256
+    },
+    "Unet_TF\/conv2d_17\/BiasAdd\/ReadVariableOp" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 1,
+      "h" : 1
+    },
+    "Unet_TF\/activation_16\/Relu" : {
+      "k" : 64,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "Unet_TF\/activation_3\/Relu" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 128
+    },
+    "max_pool_81" : {
+      "k" : 32,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "Unet_TF\/activation_1\/Relu" : {
+      "k" : 16,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 256
+    },
+    "Unet_TF\/activation_20\/Relu" : {
+      "k" : 16,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 256
+    },
+    "Unet_TF\/concatenate_4\/concat" : {
+      "k" : 32,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 256
+    },
+    "image_output" : {
+      "k" : 1,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 256
+    },
+    "Unet_TF\/conv2d_17\/BiasAdd" : {
+      "k" : 1,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 256
+    },
+    "Unet_TF\/activation_11\/Relu" : {
+      "k" : 128,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "max_pool_80" : {
+      "k" : 16,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 128
+    },
+    "Unet_TF\/activation_15\/Relu" : {
+      "k" : 64,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "Unet_TF\/concatenate_1\/concat" : {
+      "k" : 256,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "Unet_TF\/separable_conv2d_7\/separable_conv2d\/depthwisex" : {
+      "k" : 128,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "Unet_TF\/activation_23\/Relu" : {
+      "k" : 2,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 256
+    },
+    "Unet_TF\/activation_10\/Relu" : {
+      "k" : 256,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 16
+    },
+    "Unet_TF\/separable_conv2d_5\/separable_conv2d\/depthwisex" : {
+      "k" : 256,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "Unet_TF\/activation_8\/Relu" : {
+      "k" : 128,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 32
+    },
+    "Unet_TF\/activation_14\/Relu" : {
+      "k" : 64,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 64
+    },
+    "Unet_TF\/activation_19\/Relu" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 128
+    },
+    "Unet_TF\/separable_conv2d_3\/separable_conv2d\/depthwisex" : {
+      "k" : 128,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 16
+    }
+  }
+}

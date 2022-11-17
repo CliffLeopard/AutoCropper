@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C3E7973291D021B006545C5 /* MagifierGlassModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E7972291D021B006545C5 /* MagifierGlassModifier.swift */; };
+		3C3E7977291D10B9006545C5 /* ShowCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E7976291D10B9006545C5 /* ShowCaptureView.swift */; };
+		3C3E797B291E4881006545C5 /* PhotoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E797A291E4881006545C5 /* PhotoDataModel.swift */; };
+		3C5807FD291A41FF00A1729F /* AutoCropperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5807FC291A41FF00A1729F /* AutoCropperApp.swift */; };
+		3C580801291A41FF00A1729F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C580800291A41FF00A1729F /* Assets.xcassets */; };
+		3C580804291A41FF00A1729F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C580803291A41FF00A1729F /* Preview Assets.xcassets */; };
+		3C58080E291A41FF00A1729F /* AutoCropperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58080D291A41FF00A1729F /* AutoCropperTests.swift */; };
+		3C580818291A41FF00A1729F /* AutoCropperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580817291A41FF00A1729F /* AutoCropperUITests.swift */; };
+		3C58081A291A41FF00A1729F /* AutoCropperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580819291A41FF00A1729F /* AutoCropperUITestsLaunchTests.swift */; };
+		3C580828291A424200A1729F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C580827291A423900A1729F /* libc++.tbd */; };
+		3C58082A291A428300A1729F /* opencv2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C580829291A428300A1729F /* opencv2.xcframework */; };
+		3C580853291A43DA00A1729F /* PermissionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58082C291A43D900A1729F /* PermissionCenter.swift */; };
+		3C580854291A43DA00A1729F /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58082E291A43D900A1729F /* ScanView.swift */; };
+		3C580856291A43DA00A1729F /* CICropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580831291A43D900A1729F /* CICropper.swift */; };
+		3C580857291A43DA00A1729F /* TFCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580832291A43D900A1729F /* TFCropper.swift */; };
+		3C580858291A43DA00A1729F /* CVCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580833291A43D900A1729F /* CVCropper.swift */; };
+		3C580859291A43DA00A1729F /* ICropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580834291A43D900A1729F /* ICropper.swift */; };
+		3C58085A291A43DA00A1729F /* tensor_quad.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 3C580835291A43D900A1729F /* tensor_quad.tflite */; };
+		3C58085B291A43DA00A1729F /* MLCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580836291A43D900A1729F /* MLCropper.swift */; };
+		3C58085C291A43DA00A1729F /* SCropRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580837291A43D900A1729F /* SCropRect.swift */; };
+		3C58085D291A43DA00A1729F /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580838291A43D900A1729F /* CameraPreview.swift */; };
+		3C58085E291A43DA00A1729F /* CameraDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58083A291A43D900A1729F /* CameraDataModel.swift */; };
+		3C58085F291A43DA00A1729F /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58083B291A43D900A1729F /* Camera.swift */; };
+		3C580860291A43DA00A1729F /* ScanHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58083C291A43D900A1729F /* ScanHeaderView.swift */; };
+		3C580862291A43DA00A1729F /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58083E291A43D900A1729F /* ThumbnailView.swift */; };
+		3C580863291A43DA00A1729F /* Point+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580840291A43DA00A1729F /* Point+.swift */; };
+		3C580864291A43DA00A1729F /* EnvironmentValues+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580841291A43DA00A1729F /* EnvironmentValues+.swift */; };
+		3C580865291A43DA00A1729F /* CropImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580842291A43DA00A1729F /* CropImageModifier.swift */; };
+		3C580866291A43DA00A1729F /* CIImage++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580843291A43DA00A1729F /* CIImage++.swift */; };
+		3C580867291A43DA00A1729F /* CustomCoverViewModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580844291A43DA00A1729F /* CustomCoverViewModifer.swift */; };
+		3C580868291A43DA00A1729F /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580845291A43DA00A1729F /* View+.swift */; };
+		3C580869291A43DA00A1729F /* MultiPressViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580846291A43DA00A1729F /* MultiPressViewModifier.swift */; };
+		3C58086A291A43DA00A1729F /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580848291A43DA00A1729F /* PhotoView.swift */; };
+		3C58086B291A43DA00A1729F /* CachedImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580849291A43DA00A1729F /* CachedImageManager.swift */; };
+		3C58086C291A43DA00A1729F /* PhotoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58084A291A43DA00A1729F /* PhotoItemView.swift */; };
+		3C58086D291A43DA00A1729F /* PhotoAssetCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58084C291A43DA00A1729F /* PhotoAssetCollection.swift */; };
+		3C58086E291A43DA00A1729F /* PhotoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58084D291A43DA00A1729F /* PhotoCollection.swift */; };
+		3C58086F291A43DA00A1729F /* PhotoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58084E291A43DA00A1729F /* PhotoAsset.swift */; };
+		3C580870291A43DA00A1729F /* PhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C58084F291A43DA00A1729F /* PhotoCollectionView.swift */; };
+		3C580871291A43DA00A1729F /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580851291A43DA00A1729F /* PagerView.swift */; };
+		3C580872291A43DA00A1729F /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580852291A43DA00A1729F /* Line.swift */; };
+		3CDE39E72925F67100F0CD86 /* coreml_quad_ios14.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 3CDE39E62925F67100F0CD86 /* coreml_quad_ios14.mlmodelc */; };
+		3CDE39E92925F68700F0CD86 /* coreml_quad.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 3CDE39E82925F68700F0CD86 /* coreml_quad.mlmodelc */; };
+		3CDE39EB2925F6D900F0CD86 /* CoreMLCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDE39EA2925F6D900F0CD86 /* CoreMLCropper.swift */; };
+		3CDE39F029260BD000F0CD86 /* LensInputImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDE39EF29260BD000F0CD86 /* LensInputImpl.swift */; };
+		3CDE39F52926303900F0CD86 /* LensCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDE39F42926303900F0CD86 /* LensCropper.swift */; };
+		C21E64DAEB0130BDD9F8E7CB /* Pods_AutoCropper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8408807886E7C18BCAFB4920 /* Pods_AutoCropper.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C58080A291A41FF00A1729F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C5807F1291A41FF00A1729F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C5807F8291A41FF00A1729F;
+			remoteInfo = AutoCropper;
+		};
+		3C580814291A41FF00A1729F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C5807F1291A41FF00A1729F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C5807F8291A41FF00A1729F;
+			remoteInfo = AutoCropper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C3E7972291D021B006545C5 /* MagifierGlassModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagifierGlassModifier.swift; sourceTree = "<group>"; };
+		3C3E7976291D10B9006545C5 /* ShowCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCaptureView.swift; sourceTree = "<group>"; };
+		3C3E797A291E4881006545C5 /* PhotoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataModel.swift; sourceTree = "<group>"; };
+		3C5807F9291A41FF00A1729F /* AutoCropper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoCropper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5807FC291A41FF00A1729F /* AutoCropperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCropperApp.swift; sourceTree = "<group>"; };
+		3C580800291A41FF00A1729F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C580803291A41FF00A1729F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C580809291A41FF00A1729F /* AutoCropperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoCropperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C58080D291A41FF00A1729F /* AutoCropperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCropperTests.swift; sourceTree = "<group>"; };
+		3C580813291A41FF00A1729F /* AutoCropperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoCropperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C580817291A41FF00A1729F /* AutoCropperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCropperUITests.swift; sourceTree = "<group>"; };
+		3C580819291A41FF00A1729F /* AutoCropperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCropperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3C580827291A423900A1729F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3C580829291A428300A1729F /* opencv2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = opencv2.xcframework; sourceTree = "<group>"; };
+		3C58082C291A43D900A1729F /* PermissionCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionCenter.swift; sourceTree = "<group>"; };
+		3C58082E291A43D900A1729F /* ScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		3C580831291A43D900A1729F /* CICropper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CICropper.swift; sourceTree = "<group>"; };
+		3C580832291A43D900A1729F /* TFCropper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFCropper.swift; sourceTree = "<group>"; };
+		3C580833291A43D900A1729F /* CVCropper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCropper.swift; sourceTree = "<group>"; };
+		3C580834291A43D900A1729F /* ICropper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICropper.swift; sourceTree = "<group>"; };
+		3C580835291A43D900A1729F /* tensor_quad.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = tensor_quad.tflite; sourceTree = "<group>"; };
+		3C580836291A43D900A1729F /* MLCropper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLCropper.swift; sourceTree = "<group>"; };
+		3C580837291A43D900A1729F /* SCropRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCropRect.swift; sourceTree = "<group>"; };
+		3C580838291A43D900A1729F /* CameraPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		3C58083A291A43D900A1729F /* CameraDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraDataModel.swift; sourceTree = "<group>"; };
+		3C58083B291A43D900A1729F /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		3C58083C291A43D900A1729F /* ScanHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanHeaderView.swift; sourceTree = "<group>"; };
+		3C58083E291A43D900A1729F /* ThumbnailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
+		3C580840291A43DA00A1729F /* Point+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+.swift"; sourceTree = "<group>"; };
+		3C580841291A43DA00A1729F /* EnvironmentValues+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+.swift"; sourceTree = "<group>"; };
+		3C580842291A43DA00A1729F /* CropImageModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropImageModifier.swift; sourceTree = "<group>"; };
+		3C580843291A43DA00A1729F /* CIImage++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CIImage++.swift"; sourceTree = "<group>"; };
+		3C580844291A43DA00A1729F /* CustomCoverViewModifer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCoverViewModifer.swift; sourceTree = "<group>"; };
+		3C580845291A43DA00A1729F /* View+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		3C580846291A43DA00A1729F /* MultiPressViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPressViewModifier.swift; sourceTree = "<group>"; };
+		3C580848291A43DA00A1729F /* PhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		3C580849291A43DA00A1729F /* CachedImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedImageManager.swift; sourceTree = "<group>"; };
+		3C58084A291A43DA00A1729F /* PhotoItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoItemView.swift; sourceTree = "<group>"; };
+		3C58084C291A43DA00A1729F /* PhotoAssetCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAssetCollection.swift; sourceTree = "<group>"; };
+		3C58084D291A43DA00A1729F /* PhotoCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollection.swift; sourceTree = "<group>"; };
+		3C58084E291A43DA00A1729F /* PhotoAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAsset.swift; sourceTree = "<group>"; };
+		3C58084F291A43DA00A1729F /* PhotoCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionView.swift; sourceTree = "<group>"; };
+		3C580851291A43DA00A1729F /* PagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
+		3C580852291A43DA00A1729F /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		3CDE39E62925F67100F0CD86 /* coreml_quad_ios14.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = coreml_quad_ios14.mlmodelc; sourceTree = "<group>"; };
+		3CDE39E82925F68700F0CD86 /* coreml_quad.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = coreml_quad.mlmodelc; sourceTree = "<group>"; };
+		3CDE39EA2925F6D900F0CD86 /* CoreMLCropper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLCropper.swift; sourceTree = "<group>"; };
+		3CDE39EF29260BD000F0CD86 /* LensInputImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensInputImpl.swift; sourceTree = "<group>"; };
+		3CDE39F42926303900F0CD86 /* LensCropper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensCropper.swift; sourceTree = "<group>"; };
+		3F3870D130CF54CEDBFE1282 /* Pods-AutoCropper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoCropper.debug.xcconfig"; path = "Target Support Files/Pods-AutoCropper/Pods-AutoCropper.debug.xcconfig"; sourceTree = "<group>"; };
+		5CE3DBEE6B961EDCF8614659 /* Pods-AutoCropper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoCropper.release.xcconfig"; path = "Target Support Files/Pods-AutoCropper/Pods-AutoCropper.release.xcconfig"; sourceTree = "<group>"; };
+		8408807886E7C18BCAFB4920 /* Pods_AutoCropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C5807F6291A41FF00A1729F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C580828291A424200A1729F /* libc++.tbd in Frameworks */,
+				3C58082A291A428300A1729F /* opencv2.xcframework in Frameworks */,
+				C21E64DAEB0130BDD9F8E7CB /* Pods_AutoCropper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C580806291A41FF00A1729F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C580810291A41FF00A1729F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C3E7974291D07E7006545C5 /* Cropper */ = {
+			isa = PBXGroup;
+			children = (
+				3CDE39F32926301F00F0CD86 /* Lens */,
+				3C580831291A43D900A1729F /* CICropper.swift */,
+				3C580833291A43D900A1729F /* CVCropper.swift */,
+				3C580832291A43D900A1729F /* TFCropper.swift */,
+				3C580836291A43D900A1729F /* MLCropper.swift */,
+				3CDE39F42926303900F0CD86 /* LensCropper.swift */,
+				3C580834291A43D900A1729F /* ICropper.swift */,
+				3C580837291A43D900A1729F /* SCropRect.swift */,
+				3CDE39E82925F68700F0CD86 /* coreml_quad.mlmodelc */,
+				3CDE39E62925F67100F0CD86 /* coreml_quad_ios14.mlmodelc */,
+				3C580835291A43D900A1729F /* tensor_quad.tflite */,
+			);
+			path = Cropper;
+			sourceTree = "<group>";
+		};
+		3C3E7975291D085D006545C5 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				3C580844291A43DA00A1729F /* CustomCoverViewModifer.swift */,
+				3C580846291A43DA00A1729F /* MultiPressViewModifier.swift */,
+				3C3E7972291D021B006545C5 /* MagifierGlassModifier.swift */,
+				3C580842291A43DA00A1729F /* CropImageModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		3C5807F0291A41FF00A1729F = {
+			isa = PBXGroup;
+			children = (
+				3C5807FB291A41FF00A1729F /* AutoCropper */,
+				3C58080C291A41FF00A1729F /* AutoCropperTests */,
+				3C580816291A41FF00A1729F /* AutoCropperUITests */,
+				3C5807FA291A41FF00A1729F /* Products */,
+				3C580826291A423900A1729F /* Frameworks */,
+				ECD54764527268F5FEDD6672 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		3C5807FA291A41FF00A1729F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C5807F9291A41FF00A1729F /* AutoCropper.app */,
+				3C580809291A41FF00A1729F /* AutoCropperTests.xctest */,
+				3C580813291A41FF00A1729F /* AutoCropperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C5807FB291A41FF00A1729F /* AutoCropper */ = {
+			isa = PBXGroup;
+			children = (
+				3C58082B291A43D900A1729F /* Tools */,
+				3C580850291A43DA00A1729F /* Views */,
+				3C3E7974291D07E7006545C5 /* Cropper */,
+				3C580847291A43DA00A1729F /* Gallery */,
+				3C58082D291A43D900A1729F /* Scan */,
+				3C5807FC291A41FF00A1729F /* AutoCropperApp.swift */,
+				3C58082E291A43D900A1729F /* ScanView.swift */,
+				3C580800291A41FF00A1729F /* Assets.xcassets */,
+				3C580802291A41FF00A1729F /* Preview Content */,
+			);
+			path = AutoCropper;
+			sourceTree = "<group>";
+		};
+		3C580802291A41FF00A1729F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3C580803291A41FF00A1729F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C58080C291A41FF00A1729F /* AutoCropperTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C58080D291A41FF00A1729F /* AutoCropperTests.swift */,
+			);
+			path = AutoCropperTests;
+			sourceTree = "<group>";
+		};
+		3C580816291A41FF00A1729F /* AutoCropperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C580817291A41FF00A1729F /* AutoCropperUITests.swift */,
+				3C580819291A41FF00A1729F /* AutoCropperUITestsLaunchTests.swift */,
+			);
+			path = AutoCropperUITests;
+			sourceTree = "<group>";
+		};
+		3C580826291A423900A1729F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C580829291A428300A1729F /* opencv2.xcframework */,
+				3C580827291A423900A1729F /* libc++.tbd */,
+				8408807886E7C18BCAFB4920 /* Pods_AutoCropper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C58082B291A43D900A1729F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3C58082C291A43D900A1729F /* PermissionCenter.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3C58082D291A43D900A1729F /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				3C580839291A43D900A1729F /* DM */,
+				3C580838291A43D900A1729F /* CameraPreview.swift */,
+				3C58083C291A43D900A1729F /* ScanHeaderView.swift */,
+				3C58083E291A43D900A1729F /* ThumbnailView.swift */,
+				3C3E7976291D10B9006545C5 /* ShowCaptureView.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		3C580839291A43D900A1729F /* DM */ = {
+			isa = PBXGroup;
+			children = (
+				3C58083A291A43D900A1729F /* CameraDataModel.swift */,
+				3C3E797A291E4881006545C5 /* PhotoDataModel.swift */,
+				3C58083B291A43D900A1729F /* Camera.swift */,
+			);
+			path = DM;
+			sourceTree = "<group>";
+		};
+		3C58083F291A43DA00A1729F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3C580840291A43DA00A1729F /* Point+.swift */,
+				3C580841291A43DA00A1729F /* EnvironmentValues+.swift */,
+				3C580843291A43DA00A1729F /* CIImage++.swift */,
+				3C580845291A43DA00A1729F /* View+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3C580847291A43DA00A1729F /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				3C58084B291A43DA00A1729F /* DM */,
+				3C580848291A43DA00A1729F /* PhotoView.swift */,
+				3C580849291A43DA00A1729F /* CachedImageManager.swift */,
+				3C58084A291A43DA00A1729F /* PhotoItemView.swift */,
+				3C58084F291A43DA00A1729F /* PhotoCollectionView.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		3C58084B291A43DA00A1729F /* DM */ = {
+			isa = PBXGroup;
+			children = (
+				3C58084C291A43DA00A1729F /* PhotoAssetCollection.swift */,
+				3C58084D291A43DA00A1729F /* PhotoCollection.swift */,
+				3C58084E291A43DA00A1729F /* PhotoAsset.swift */,
+			);
+			path = DM;
+			sourceTree = "<group>";
+		};
+		3C580850291A43DA00A1729F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C3E7975291D085D006545C5 /* Modifier */,
+				3C58083F291A43DA00A1729F /* Extension */,
+				3C580851291A43DA00A1729F /* PagerView.swift */,
+				3C580852291A43DA00A1729F /* Line.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CDE39F32926301F00F0CD86 /* Lens */ = {
+			isa = PBXGroup;
+			children = (
+				3CDE39EA2925F6D900F0CD86 /* CoreMLCropper.swift */,
+				3CDE39EF29260BD000F0CD86 /* LensInputImpl.swift */,
+			);
+			path = Lens;
+			sourceTree = "<group>";
+		};
+		ECD54764527268F5FEDD6672 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F3870D130CF54CEDBFE1282 /* Pods-AutoCropper.debug.xcconfig */,
+				5CE3DBEE6B961EDCF8614659 /* Pods-AutoCropper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C5807F8291A41FF00A1729F /* AutoCropper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C58081D291A41FF00A1729F /* Build configuration list for PBXNativeTarget "AutoCropper" */;
+			buildPhases = (
+				79A297FD57182C5750678711 /* [CP] Check Pods Manifest.lock */,
+				3C5807F5291A41FF00A1729F /* Sources */,
+				3C5807F6291A41FF00A1729F /* Frameworks */,
+				3C5807F7291A41FF00A1729F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoCropper;
+			productName = AutoCropper;
+			productReference = 3C5807F9291A41FF00A1729F /* AutoCropper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C580808291A41FF00A1729F /* AutoCropperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C580820291A41FF00A1729F /* Build configuration list for PBXNativeTarget "AutoCropperTests" */;
+			buildPhases = (
+				3C580805291A41FF00A1729F /* Sources */,
+				3C580806291A41FF00A1729F /* Frameworks */,
+				3C580807291A41FF00A1729F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C58080B291A41FF00A1729F /* PBXTargetDependency */,
+			);
+			name = AutoCropperTests;
+			productName = AutoCropperTests;
+			productReference = 3C580809291A41FF00A1729F /* AutoCropperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C580812291A41FF00A1729F /* AutoCropperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C580823291A41FF00A1729F /* Build configuration list for PBXNativeTarget "AutoCropperUITests" */;
+			buildPhases = (
+				3C58080F291A41FF00A1729F /* Sources */,
+				3C580810291A41FF00A1729F /* Frameworks */,
+				3C580811291A41FF00A1729F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C580815291A41FF00A1729F /* PBXTargetDependency */,
+			);
+			name = AutoCropperUITests;
+			productName = AutoCropperUITests;
+			productReference = 3C580813291A41FF00A1729F /* AutoCropperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C5807F1291A41FF00A1729F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					3C5807F8291A41FF00A1729F = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					3C580808291A41FF00A1729F = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 3C5807F8291A41FF00A1729F;
+					};
+					3C580812291A41FF00A1729F = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 3C5807F8291A41FF00A1729F;
+					};
+				};
+			};
+			buildConfigurationList = 3C5807F4291A41FF00A1729F /* Build configuration list for PBXProject "AutoCropper" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C5807F0291A41FF00A1729F;
+			productRefGroup = 3C5807FA291A41FF00A1729F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C5807F8291A41FF00A1729F /* AutoCropper */,
+				3C580808291A41FF00A1729F /* AutoCropperTests */,
+				3C580812291A41FF00A1729F /* AutoCropperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C5807F7291A41FF00A1729F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDE39E92925F68700F0CD86 /* coreml_quad.mlmodelc in Resources */,
+				3C580804291A41FF00A1729F /* Preview Assets.xcassets in Resources */,
+				3C58085A291A43DA00A1729F /* tensor_quad.tflite in Resources */,
+				3C580801291A41FF00A1729F /* Assets.xcassets in Resources */,
+				3CDE39E72925F67100F0CD86 /* coreml_quad_ios14.mlmodelc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C580807291A41FF00A1729F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C580811291A41FF00A1729F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79A297FD57182C5750678711 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutoCropper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C5807F5291A41FF00A1729F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C58086C291A43DA00A1729F /* PhotoItemView.swift in Sources */,
+				3C580871291A43DA00A1729F /* PagerView.swift in Sources */,
+				3C58085E291A43DA00A1729F /* CameraDataModel.swift in Sources */,
+				3C580853291A43DA00A1729F /* PermissionCenter.swift in Sources */,
+				3C58086F291A43DA00A1729F /* PhotoAsset.swift in Sources */,
+				3C580866291A43DA00A1729F /* CIImage++.swift in Sources */,
+				3C580854291A43DA00A1729F /* ScanView.swift in Sources */,
+				3C3E7977291D10B9006545C5 /* ShowCaptureView.swift in Sources */,
+				3C580868291A43DA00A1729F /* View+.swift in Sources */,
+				3C580857291A43DA00A1729F /* TFCropper.swift in Sources */,
+				3C580872291A43DA00A1729F /* Line.swift in Sources */,
+				3C58085C291A43DA00A1729F /* SCropRect.swift in Sources */,
+				3CDE39F029260BD000F0CD86 /* LensInputImpl.swift in Sources */,
+				3C58086A291A43DA00A1729F /* PhotoView.swift in Sources */,
+				3C58085B291A43DA00A1729F /* MLCropper.swift in Sources */,
+				3C58086D291A43DA00A1729F /* PhotoAssetCollection.swift in Sources */,
+				3C580869291A43DA00A1729F /* MultiPressViewModifier.swift in Sources */,
+				3C5807FD291A41FF00A1729F /* AutoCropperApp.swift in Sources */,
+				3CDE39F52926303900F0CD86 /* LensCropper.swift in Sources */,
+				3C3E7973291D021B006545C5 /* MagifierGlassModifier.swift in Sources */,
+				3C3E797B291E4881006545C5 /* PhotoDataModel.swift in Sources */,
+				3C58086E291A43DA00A1729F /* PhotoCollection.swift in Sources */,
+				3C58086B291A43DA00A1729F /* CachedImageManager.swift in Sources */,
+				3C580859291A43DA00A1729F /* ICropper.swift in Sources */,
+				3C580863291A43DA00A1729F /* Point+.swift in Sources */,
+				3C58085D291A43DA00A1729F /* CameraPreview.swift in Sources */,
+				3C580862291A43DA00A1729F /* ThumbnailView.swift in Sources */,
+				3CDE39EB2925F6D900F0CD86 /* CoreMLCropper.swift in Sources */,
+				3C580867291A43DA00A1729F /* CustomCoverViewModifer.swift in Sources */,
+				3C580864291A43DA00A1729F /* EnvironmentValues+.swift in Sources */,
+				3C580865291A43DA00A1729F /* CropImageModifier.swift in Sources */,
+				3C580858291A43DA00A1729F /* CVCropper.swift in Sources */,
+				3C580870291A43DA00A1729F /* PhotoCollectionView.swift in Sources */,
+				3C58085F291A43DA00A1729F /* Camera.swift in Sources */,
+				3C580856291A43DA00A1729F /* CICropper.swift in Sources */,
+				3C580860291A43DA00A1729F /* ScanHeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C580805291A41FF00A1729F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C58080E291A41FF00A1729F /* AutoCropperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C58080F291A41FF00A1729F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C580818291A41FF00A1729F /* AutoCropperUITests.swift in Sources */,
+				3C58081A291A41FF00A1729F /* AutoCropperUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C58080B291A41FF00A1729F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C5807F8291A41FF00A1729F /* AutoCropper */;
+			targetProxy = 3C58080A291A41FF00A1729F /* PBXContainerItemProxy */;
+		};
+		3C580815291A41FF00A1729F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C5807F8291A41FF00A1729F /* AutoCropper */;
+			targetProxy = 3C580814291A41FF00A1729F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3C58081B291A41FF00A1729F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C58081C291A41FF00A1729F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-all_load";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C58081E291A41FF00A1729F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F3870D130CF54CEDBFE1282 /* Pods-AutoCropper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AutoCropper/Preview Content\"";
+				DEVELOPMENT_TEAM = TM8P7XT329;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "USE CAMERA TO SCAN";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Use Photo  Library To Scan Document";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cliff.AutoCropper1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C58081F291A41FF00A1729F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CE3DBEE6B961EDCF8614659 /* Pods-AutoCropper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AutoCropper/Preview Content\"";
+				DEVELOPMENT_TEAM = TM8P7XT329;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "USE CAMERA TO SCAN";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Use Photo  Library To Scan Document";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cliff.AutoCropper1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C580821291A41FF00A1729F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TM8P7XT329;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cliff.AutoCropperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoCropper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AutoCropper";
+			};
+			name = Debug;
+		};
+		3C580822291A41FF00A1729F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TM8P7XT329;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cliff.AutoCropperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoCropper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AutoCropper";
+			};
+			name = Release;
+		};
+		3C580824291A41FF00A1729F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TM8P7XT329;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cliff.AutoCropperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AutoCropper;
+			};
+			name = Debug;
+		};
+		3C580825291A41FF00A1729F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TM8P7XT329;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cliff.AutoCropperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AutoCropper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C5807F4291A41FF00A1729F /* Build configuration list for PBXProject "AutoCropper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C58081B291A41FF00A1729F /* Debug */,
+				3C58081C291A41FF00A1729F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C58081D291A41FF00A1729F /* Build configuration list for PBXNativeTarget "AutoCropper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C58081E291A41FF00A1729F /* Debug */,
+				3C58081F291A41FF00A1729F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C580820291A41FF00A1729F /* Build configuration list for PBXNativeTarget "AutoCropperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C580821291A41FF00A1729F /* Debug */,
+				3C580822291A41FF00A1729F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C580823291A41FF00A1729F /* Build configuration list for PBXNativeTarget "AutoCropperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C580824291A41FF00A1729F /* Debug */,
+				3C580825291A41FF00A1729F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C5807F1291A41FF00A1729F /* Project object */;
+}

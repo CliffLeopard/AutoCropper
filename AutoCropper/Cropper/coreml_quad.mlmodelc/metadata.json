@@ -1,0 +1,68 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "Sample Model",
+    "outputSchema" : [
+      {
+        "height" : "256",
+        "colorspace" : "Grayscale",
+        "isOptional" : "0",
+        "width" : "256",
+        "isColor" : "0",
+        "formattedType" : "Image (Grayscale 256 × 256)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "Predicted Image",
+        "name" : "image_output"
+      }
+    ],
+    "storagePrecision" : "Float32",
+    "modelParameters" : [
+
+    ],
+    "author" : "Mukul Hase",
+    "specificationVersion" : 1,
+    "license" : "Blah",
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "height" : "256",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "256",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 256 × 256)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "Input Image",
+        "name" : "image"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "coremltoolsVersion" : "3.4"
+    },
+    "generatedClassName" : "UNET_DOCS_08_EXP_09",
+    "neuralNetworkLayerTypeHistogram" : {
+      "Concat" : 4,
+      "ActivationLinear" : 1,
+      "ActivationReLU" : 23,
+      "UpsampleBiLinear" : 4,
+      "BatchNorm" : 9,
+      "Convolution" : 31,
+      "ActivationSigmoid" : 1,
+      "PoolingMax" : 4
+    },
+    "method" : "predict"
+  }
+]
