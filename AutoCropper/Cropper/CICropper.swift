@@ -1,5 +1,5 @@
 //
-//  ICropperBaseImpl.swift
+//  CICropper.swift
 //  AutoCropper
 //
 //  Created by CliffLeopard on 2022/10/12.

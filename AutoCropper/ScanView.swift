@@ -44,6 +44,12 @@ struct ScanView: View {
                             .scaleEffect(3)
                     }
                 })
+                .onAppear {
+                    self.model.camera.isPreviewPaused = false
+                }
+                .onDisappear {
+                    self.model.camera.isPreviewPaused = true
+                }
                 .overlay(alignment: .top, content: {
                     if(self.model.showPixelSelector) {
                         Picker("Select Room Type", selection: self.$selection) {
@@ -94,9 +100,6 @@ struct ScanView: View {
                 PhotoCollectionView(photoCollection: model.photoModel.photoCollection)
                     .onAppear {
                         model.camera.isPreviewPaused = true
-                    }
-                    .onDisappear {
-                        model.camera.isPreviewPaused = false
                     }
             } label: {
                 Label {

@@ -7,7 +7,7 @@
 
 import Foundation
 import CoreML
-class InputImpl:MLFeatureProvider {
+class LensInputProvider:MLFeatureProvider {
     let cgImage:CGImage
     let constraint:MLImageConstraint
     init(cgImage:CGImage,constraint:MLImageConstraint) {
@@ -24,6 +24,8 @@ class InputImpl:MLFeatureProvider {
             } catch {
                 debugPrint("build featureValue error",error.localizedDescription)
             }
+        } else {
+            debugPrint("not expected featureName",featureName)
         }
         return nil
     }

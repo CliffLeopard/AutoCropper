@@ -1,0 +1,83 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "label",
+        "shortDescription" : "Predicted label"
+      },
+      {
+        "isOptional" : "0",
+        "keyType" : "String",
+        "formattedType" : "Dictionary (String → Double)",
+        "type" : "Dictionary",
+        "name" : "labelProbability",
+        "shortDescription" : "Probabilities for each possible label"
+      }
+    ],
+    "modelParameters" : [
+      {
+        "defaultValue" : "5",
+        "scope" : "",
+        "allowedRange" : "[1, 10]",
+        "name" : "numberOfNeighbors",
+        "dataType" : "Int64",
+        "shortDescription" : "Number of neighbors to use for prediction"
+      }
+    ],
+    "specificationVersion" : 4,
+    "updateParameters" : [
+
+    ],
+    "isUpdatable" : "1",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_kNearestNeighborsClassifier"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 2048)",
+        "shortDescription" : "Input vector",
+        "shape" : "[2048]",
+        "name" : "features",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+
+    },
+    "generatedClassName" : "KNN",
+    "trainingInputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 2048)",
+        "shortDescription" : "Example features",
+        "shape" : "[2048]",
+        "name" : "features",
+        "type" : "MultiArray"
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "label",
+        "shortDescription" : "True label"
+      }
+    ],
+    "method" : "predict"
+  }
+]

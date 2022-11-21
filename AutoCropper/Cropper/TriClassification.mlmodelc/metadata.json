@@ -1,0 +1,77 @@
+[
+  {
+    "shortDescription" : "Tri classifier model to predict the probability of document\/photo\/whiteboard",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "keyType" : "String",
+        "formattedType" : "Dictionary (String → Double)",
+        "type" : "Dictionary",
+        "name" : "confidence",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "classLabel",
+        "shortDescription" : ""
+      }
+    ],
+    "version" : "2.0",
+    "modelParameters" : [
+
+    ],
+    "author" : "Lens iOS Team",
+    "specificationVersion" : 4,
+    "storagePrecision" : "Int8",
+    "license" : "Microsoft Corporation",
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetworkClassifier"
+    },
+    "inputSchema" : [
+      {
+        "height" : "256",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "256",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 256 × 256)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "model_input"
+      }
+    ],
+    "classLabels" : [
+      "document",
+      "photo",
+      "whiteboard"
+    ],
+    "generatedClassName" : "TriClassification",
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "4.1",
+      "com.github.apple.coremltools.source" : "torch==1.7.1"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "ActivationReLU" : 2,
+      "ReshapeStatic" : 1,
+      "Add" : 3,
+      "SoftmaxND" : 1,
+      "Clip" : 14,
+      "Convolution" : 22,
+      "InnerProduct" : 2
+    },
+    "method" : "predict"
+  }
+]

@@ -12,6 +12,7 @@ struct AutoCropperApp: App {
     var body: some Scene {
         WindowGroup {
             ScanView()
+//            MLView()
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  ICropperDpImpl.swift
+//  TFCropper.swift
 //  AutoCropper
 //
 //  Created by CliffLeopard on 2022/10/12.
@@ -83,11 +83,10 @@ class TFCropper {
     
     // 获取用于预测的Data
     public static func dataForPredict(cgImg:CGImage) -> Data? {
-        var reseizeImg:CGImage = cgImageForPredict(cgImg: cgImg) ?? cgImg
+        let reseizeImg:CGImage = cgImageForPredict(cgImg: cgImg) ?? cgImg
         guard let data = reseizeImg.dataProvider?.data else {
             return nil
         }
-        
         return data as Data
     }
     

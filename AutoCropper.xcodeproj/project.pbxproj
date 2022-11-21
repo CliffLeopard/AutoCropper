@@ -50,8 +50,12 @@
 		3C580872291A43DA00A1729F /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C580852291A43DA00A1729F /* Line.swift */; };
 		3CDE39E72925F67100F0CD86 /* coreml_quad_ios14.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 3CDE39E62925F67100F0CD86 /* coreml_quad_ios14.mlmodelc */; };
 		3CDE39E92925F68700F0CD86 /* coreml_quad.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 3CDE39E82925F68700F0CD86 /* coreml_quad.mlmodelc */; };
-		3CDE39F029260BD000F0CD86 /* LensInputImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDE39EF29260BD000F0CD86 /* LensInputImpl.swift */; };
+		3CDE39F029260BD000F0CD86 /* LensInputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDE39EF29260BD000F0CD86 /* LensInputProvider.swift */; };
 		3CDE39F52926303900F0CD86 /* LensCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDE39F42926303900F0CD86 /* LensCropper.swift */; };
+		3CDE39FF2927316800F0CD86 /* KNN.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 3CDE39FE2927316800F0CD86 /* KNN.mlmodelc */; };
+		3CDE3A012927318F00F0CD86 /* TriClassification.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 3CDE3A002927318F00F0CD86 /* TriClassification.mlmodelc */; };
+		3CDE3A03292732D500F0CD86 /* MLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDE3A02292732D500F0CD86 /* MLView.swift */; };
+		3CDE3A05292732F500F0CD86 /* ModelLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDE3A04292732F500F0CD86 /* ModelLoader.swift */; };
 		C21E64DAEB0130BDD9F8E7CB /* Pods_AutoCropper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8408807886E7C18BCAFB4920 /* Pods_AutoCropper.framework */; };
 /* End PBXBuildFile section */
 
@@ -119,8 +123,12 @@
 		3C580852291A43DA00A1729F /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		3CDE39E62925F67100F0CD86 /* coreml_quad_ios14.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = coreml_quad_ios14.mlmodelc; sourceTree = "<group>"; };
 		3CDE39E82925F68700F0CD86 /* coreml_quad.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = coreml_quad.mlmodelc; sourceTree = "<group>"; };
-		3CDE39EF29260BD000F0CD86 /* LensInputImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensInputImpl.swift; sourceTree = "<group>"; };
+		3CDE39EF29260BD000F0CD86 /* LensInputProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensInputProvider.swift; sourceTree = "<group>"; };
 		3CDE39F42926303900F0CD86 /* LensCropper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensCropper.swift; sourceTree = "<group>"; };
+		3CDE39FE2927316800F0CD86 /* KNN.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = KNN.mlmodelc; sourceTree = "<group>"; };
+		3CDE3A002927318F00F0CD86 /* TriClassification.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TriClassification.mlmodelc; sourceTree = "<group>"; };
+		3CDE3A02292732D500F0CD86 /* MLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLView.swift; sourceTree = "<group>"; };
+		3CDE3A04292732F500F0CD86 /* ModelLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLoader.swift; sourceTree = "<group>"; };
 		3F3870D130CF54CEDBFE1282 /* Pods-AutoCropper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoCropper.debug.xcconfig"; path = "Target Support Files/Pods-AutoCropper/Pods-AutoCropper.debug.xcconfig"; sourceTree = "<group>"; };
 		5CE3DBEE6B961EDCF8614659 /* Pods-AutoCropper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoCropper.release.xcconfig"; path = "Target Support Files/Pods-AutoCropper/Pods-AutoCropper.release.xcconfig"; sourceTree = "<group>"; };
 		8408807886E7C18BCAFB4920 /* Pods_AutoCropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,9 +170,12 @@
 				3C580832291A43D900A1729F /* TFCropper.swift */,
 				3C580836291A43D900A1729F /* MLCropper.swift */,
 				3CDE39F42926303900F0CD86 /* LensCropper.swift */,
-				3CDE39EF29260BD000F0CD86 /* LensInputImpl.swift */,
+				3CDE39EF29260BD000F0CD86 /* LensInputProvider.swift */,
+				3CDE3A04292732F500F0CD86 /* ModelLoader.swift */,
 				3C580834291A43D900A1729F /* ICropper.swift */,
 				3C580837291A43D900A1729F /* SCropRect.swift */,
+				3CDE39FE2927316800F0CD86 /* KNN.mlmodelc */,
+				3CDE3A002927318F00F0CD86 /* TriClassification.mlmodelc */,
 				3CDE39E82925F68700F0CD86 /* coreml_quad.mlmodelc */,
 				3CDE39E62925F67100F0CD86 /* coreml_quad_ios14.mlmodelc */,
 				3C580835291A43D900A1729F /* tensor_quad.tflite */,
@@ -214,6 +225,7 @@
 				3C580847291A43DA00A1729F /* Gallery */,
 				3C58082D291A43D900A1729F /* Scan */,
 				3C5807FC291A41FF00A1729F /* AutoCropperApp.swift */,
+				3CDE3A02292732D500F0CD86 /* MLView.swift */,
 				3C58082E291A43D900A1729F /* ScanView.swift */,
 				3C580800291A41FF00A1729F /* Assets.xcassets */,
 				3C580802291A41FF00A1729F /* Preview Content */,
@@ -448,7 +460,9 @@
 				3C580804291A41FF00A1729F /* Preview Assets.xcassets in Resources */,
 				3C58085A291A43DA00A1729F /* tensor_quad.tflite in Resources */,
 				3C580801291A41FF00A1729F /* Assets.xcassets in Resources */,
+				3CDE39FF2927316800F0CD86 /* KNN.mlmodelc in Resources */,
 				3CDE39E72925F67100F0CD86 /* coreml_quad_ios14.mlmodelc in Resources */,
+				3CDE3A012927318F00F0CD86 /* TriClassification.mlmodelc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,13 +524,14 @@
 				3C580857291A43DA00A1729F /* TFCropper.swift in Sources */,
 				3C580872291A43DA00A1729F /* Line.swift in Sources */,
 				3C58085C291A43DA00A1729F /* SCropRect.swift in Sources */,
-				3CDE39F029260BD000F0CD86 /* LensInputImpl.swift in Sources */,
+				3CDE39F029260BD000F0CD86 /* LensInputProvider.swift in Sources */,
 				3C58086A291A43DA00A1729F /* PhotoView.swift in Sources */,
 				3C58085B291A43DA00A1729F /* MLCropper.swift in Sources */,
 				3C58086D291A43DA00A1729F /* PhotoAssetCollection.swift in Sources */,
 				3C580869291A43DA00A1729F /* MultiPressViewModifier.swift in Sources */,
 				3C5807FD291A41FF00A1729F /* AutoCropperApp.swift in Sources */,
 				3CDE39F52926303900F0CD86 /* LensCropper.swift in Sources */,
+				3CDE3A03292732D500F0CD86 /* MLView.swift in Sources */,
 				3C3E7973291D021B006545C5 /* MagifierGlassModifier.swift in Sources */,
 				3C3E797B291E4881006545C5 /* PhotoDataModel.swift in Sources */,
 				3C58086E291A43DA00A1729F /* PhotoCollection.swift in Sources */,
@@ -530,6 +545,7 @@
 				3C580865291A43DA00A1729F /* CropImageModifier.swift in Sources */,
 				3C580858291A43DA00A1729F /* CVCropper.swift in Sources */,
 				3C580870291A43DA00A1729F /* PhotoCollectionView.swift in Sources */,
+				3CDE3A05292732F500F0CD86 /* ModelLoader.swift in Sources */,
 				3C58085F291A43DA00A1729F /* Camera.swift in Sources */,
 				3C580856291A43DA00A1729F /* CICropper.swift in Sources */,
 				3C580860291A43DA00A1729F /* ScanHeaderView.swift in Sources */,

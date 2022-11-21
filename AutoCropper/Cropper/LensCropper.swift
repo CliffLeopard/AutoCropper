@@ -48,33 +48,14 @@ class LensCropper {
     
     // 边界预测
     static func detectEdges(cgImg: CGImage) -> SCropRect? {
-        let zero:UInt8 = 0x00
-        let one:UInt8 = 0xFF
-        
         guard let cgImage = lensPredict(cgImage: cgImg) else {
             return nil
         }
         let mat = Mat(cgImage: cgImage)
-        let outMat = Mat(rows: desiredSize32, cols: desiredSize32, type: CvType.CV_8UC1)
-        for i in 0..<desiredSize32 {
-            for j in 0..<desiredSize32 {
-                let point = mat.get(row: i, col: j)
-                do {
-                    if point[0] == 0.0 && point[1] == 0.0 && point[2] == 0.0{
-                        try outMat.put(row: i, col: j, data: [zero])
-                    } else {
-                        try outMat.put(row: i, col: j, data: [one])
-                    }
-                } catch {
-                    debugPrint("put error", error.localizedDescription)
-                }
-            }
-        }
-        
-        Imgproc.resize(src: outMat, dst: outMat,
+        Imgproc.cvtColor(src: mat, dst: mat, code: .COLOR_RGBA2GRAY)
+        Imgproc.resize(src: mat, dst: mat,
                        dsize: Size2i(width: Int32(cgImg.width) , height: Int32(cgImg.height)))
-        
-        let cropRect = CVCropper.findCropRect(mat: outMat)
+        let cropRect = CVCropper.findCropRect(mat: mat)
         return cropRect
     }
     
@@ -105,7 +86,7 @@ class LensCropper {
             return nil
         }
         do {
-            let outProvider = try model.prediction(from: InputImpl(cgImage: cgImage, constraint: constraint))
+            let outProvider = try model.prediction(from: LensInputProvider(cgImage: cgImage, constraint: constraint))
             let featureValue = outProvider.featureValue(for: "image_output")
             if let buffer = featureValue?.imageBufferValue {
                 return CIImage(cvPixelBuffer: buffer).asCgImage
