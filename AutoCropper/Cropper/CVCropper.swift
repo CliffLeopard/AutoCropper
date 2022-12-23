@@ -177,4 +177,24 @@ class CVCropper {
             Point2f(x: 0, y: Float(originHeight))
         ])
     }
+    
+    // 将图片处理为透明背景图的骨架图。 用于添加图片水印
+    public static func convertToTransparent(cgImg:CGImage) -> UIImage {
+        let mat = Mat(cgImage: cgImg)
+        Imgproc.cvtColor(src: mat, dst: mat, code: .COLOR_RGBA2GRAY)
+        Imgproc.adaptiveThreshold(src: mat, dst: mat, maxValue: 255, adaptiveMethod: .ADAPTIVE_THRESH_MEAN_C, thresholdType: .THRESH_BINARY, blockSize: 13, C: 7)
+        let alpha = Mat()
+        Imgproc.threshold(src: mat, dst: alpha, thresh: 200, maxval: 255, type: ThresholdTypes.THRESH_BINARY_INV)
+        Imgproc.cvtColor(src: mat, dst: mat, code: .COLOR_GRAY2RGBA)
+        let originArray = NSMutableArray()
+        Core.split(m: mat, mv: originArray)
+        
+        Core.merge(mv: [
+                    originArray[0] as! Mat,
+                    originArray[1] as! Mat,
+                    originArray[2] as! Mat,
+                    alpha,
+                ], dst: mat)
+        return mat.toUIImage()
+    }
 }

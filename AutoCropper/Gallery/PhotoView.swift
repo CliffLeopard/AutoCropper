@@ -29,6 +29,7 @@ struct PhotoView: View {
                     .showCroper(self.$cropRect,originImageWidth:self.originImageWidth,showCrop: self.$showCrop)
                     .accessibilityLabel(asset.accessibilityLabel)
                     .rotationEffect(Angle(degrees: self.rotation))
+                    .background(Color.white)
             }
             Spacer()
         }
@@ -56,6 +57,17 @@ struct PhotoView: View {
                 } label: {
                     Label("lens", systemImage: "photo")
                 }.labelStyle(VStackLabelStyle())
+                
+                
+                // 展示透明背景骨架图
+                Button {
+                    Task {
+                        await showTransparentResult()
+                    }
+                } label: {
+                    Label("trans", systemImage: "photo")
+                }.labelStyle(VStackLabelStyle())
+                
                 
                 // 展示Lens处理边框
                 Button {
@@ -159,7 +171,21 @@ struct PhotoView: View {
     private func showLensResult() async {
         guard let oImg = self.originImage else { return }
         let beginTime = Date().timeIntervalSince1970
-        if let cgImg = oImg.cgImage,let uiImage = LensCropper.showEdges(cgImg: cgImg) {
+        if  let cgImg = oImg.cgImage,
+            let uiImage = LensCropper.showEdges(cgImg: cgImg) {
+            Task{@MainActor in
+                self.image = Image(uiImage: uiImage)
+            }
+            debugPrint("LenPredictTime:",Date().timeIntervalSince1970 - beginTime)
+        }
+    }
+    
+    // 展示透明背景
+    private func showTransparentResult() async {
+        guard let oImg = self.originImage else { return }
+        let beginTime = Date().timeIntervalSince1970
+        if  let cgImg = oImg.cgImage {
+            let uiImage = CVCropper.convertToTransparent(cgImg: cgImg)
             Task{@MainActor in
                 self.image = Image(uiImage: uiImage)
             }
