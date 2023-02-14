@@ -188,7 +188,6 @@ class CVCropper {
         Imgproc.cvtColor(src: mat, dst: mat, code: .COLOR_GRAY2RGBA)
         let originArray = NSMutableArray()
         Core.split(m: mat, mv: originArray)
-        
         Core.merge(mv: [
                     originArray[0] as! Mat,
                     originArray[1] as! Mat,
